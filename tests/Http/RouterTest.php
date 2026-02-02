@@ -13,7 +13,7 @@ use function PHPUnit\Framework\assertSame;
 
 class RouterTest extends TestCase
 {
-    public function test_route_request()
+    public function testRouteRequest()
     {
         $router = new Router(
             [
@@ -26,7 +26,7 @@ class RouterTest extends TestCase
         $this->assertSame('/controllers/pokedex.php', $path);
     }
 
-    public function test_route_not_found()
+    public function testRouteNotFound()
     {
         $router = new Router(
             [

@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class PokemonTest extends TestCase
 {
-    public function test_create_pokemon()
+    public function testCreatePokemon()
     {
         $pokemon = new Pokemon(1, 'Charizard');
         $this->assertSame(1, $pokemon->id);

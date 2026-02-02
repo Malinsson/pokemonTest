@@ -65,7 +65,7 @@ class QueryBuilder
         if ($result = $statement->fetch(PDO::FETCH_OBJ)) {
             return $result;
         }
-        return throw new NotFoundHttpException;
+        return throw new NotFoundHttpException();
     }
 
     public function where(string $column, string $operator, string $value): static

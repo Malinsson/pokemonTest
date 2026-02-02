@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 class RequestTest extends TestCase
 {
-    public function test_get_uri()
+    public function testGetUri()
     {
         $_SERVER['REQUEST_URI'] = '/';
         $this->assertSame('/', Request::uri());
